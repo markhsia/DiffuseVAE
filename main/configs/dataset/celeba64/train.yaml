@@ -66,10 +66,10 @@ vae:
     epochs: 300
     log_step: 1
     device: "gpu:0"
-    #chkpt_interval: 1
+    chkpt_interval: 1
     optimizer: "Adam"
     lr: 1e-4
-    #restore_path: ""
+    restore_path: ""
     results_dir: ???
     workers: 2
     chkpt_prefix: ""
