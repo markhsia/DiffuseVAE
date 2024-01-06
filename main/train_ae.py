@@ -97,7 +97,7 @@ def train(config):
 
     logger.info(f"Running Trainer with kwargs: {train_kwargs}")
     trainer = pl.Trainer(**train_kwargs)
-    trainer.fit(vae, loader, ckpt_path='best')
+    trainer.fit(vae, loader, ckpt_path="last" if args.resume_from_ckpt else None)
 
 
 if __name__ == "__main__":
