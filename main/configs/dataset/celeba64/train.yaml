@@ -69,7 +69,7 @@ vae:
     chkpt_interval: 1
     optimizer: "Adam"
     lr: 1e-4
-    restore_path: ""
+    restore_path: "./"
     results_dir: ???
     workers: 2
     chkpt_prefix: ""
