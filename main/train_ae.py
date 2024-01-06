@@ -59,6 +59,7 @@ def train(config):
         + "-{epoch:02d}-{train_loss:.4f}",
         every_n_epochs=config.training.chkpt_interval,
         save_on_train_epoch_end=True,
+        save_top_k= 1 ,
     )
 
     train_kwargs["default_root_dir"] = results_dir
